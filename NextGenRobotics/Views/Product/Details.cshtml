@@ -1,0 +1,58 @@
+﻿@model NextGenRobotics.ViewModels.ProductDetailsVM
+
+@{
+    ViewBag.Title = "Product Details";
+}
+
+<h2 class="text-center mt-4">Product Details</h2>
+
+<div class="card shadow-lg p-4 mb-5 bg-white rounded">
+    <div class="row">
+        <!-- Product Info Section -->
+        <div class="col-md-8">
+            <h4 class="mb-4">Product Information</h4>
+            <dl class="row">
+                <!-- Category -->
+                <dt class="col-sm-4 text-muted">Category</dt>
+                <dd class="col-sm-8">@Html.DisplayFor(model => model.CategoryName)</dd>
+
+                <!-- Product Name -->
+                <dt class="col-sm-4 text-muted">@Html.DisplayNameFor(model => model.Name)</dt>
+                <dd class="col-sm-8">@Html.DisplayFor(model => model.Name)</dd>
+
+                <!-- Unit Price -->
+                <dt class="col-sm-4 text-muted">@Html.DisplayNameFor(model => model.UnitPrice)</dt>
+                <dd class="col-sm-8">@Html.DisplayFor(model => model.UnitPrice)</dd>
+
+                <!-- Units in Stock -->
+                <dt class="col-sm-4 text-muted">@Html.DisplayNameFor(model => model.UnitInStock)</dt>
+                <dd class="col-sm-8">@Html.DisplayFor(model => model.UnitInStock)</dd>
+
+                <!-- Stock Status -->
+                <dt class="col-sm-4 text-muted">@Html.DisplayNameFor(model => model.StockStatus)</dt>
+                <dd class="col-sm-8">@Html.DisplayFor(model => model.StockStatus)</dd>
+
+                <!-- Description -->
+                <dt class="col-sm-4 text-muted">@Html.DisplayNameFor(model => model.Description)</dt>
+                <dd class="col-sm-8">@Html.DisplayFor(model => model.Description)</dd>
+            </dl>
+        </div>
+
+        <!-- Product Image Section -->
+        <div class="col-md-4 text-center">
+            <h4 class="mb-4">Product Image</h4>
+            <img src="@Url.Content(Model.PicturePath)" alt="@Model.Name" class="img-fluid img-thumbnail mb-3" style="max-height: 300px;" />
+        </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="row mt-4">
+        <div class="col text-center">
+
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

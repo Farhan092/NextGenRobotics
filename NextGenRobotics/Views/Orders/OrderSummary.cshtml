@@ -1,0 +1,133 @@
+﻿@model IEnumerable<NextGenRobotics.ViewModels.OrderHistoryViewModel>
+
+@{
+    // Group the orders by their order number, if any
+    var groupedOrders = Model.GroupBy(x => x.OrderNo);
+    int serialNo = 1; // Serial number counter for orders
+}
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info text-center">
+        <strong>You haven't placed any orders.</strong>
+    </div>
+}
+else
+{
+    <div>
+        @foreach (var orderGroup in groupedOrders)
+        {
+            var firstItem = orderGroup.First(); // Get the first item to display payment and order info
+
+            <div class="order-summary mb-0">
+                <!-- Removed bottom margin here -->
+                <div class="order-header bg-light p-3 mb-3">
+                    <div class="serial-number">
+                        <strong>Order #@serialNo</strong>
+                    </div>
+                    <div class="order-info d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>Order No: </strong> @firstItem.OrderNo <br />
+                            <strong>Payment Mode: </strong> @firstItem.PaymentMode <br />
+                            <strong>Card No: </strong> ************@firstItem.CardNo.Substring(firstItem.CardNo.Length - 4)
+                        </div>
+                        <div class="invoice-button">
+                            <a href="@Url.Action("DownloadInvoice", "Payments", new { orderNo = firstItem.OrderNo })" class="btn btn-primary btn-sm">
+                                <i class="fas fa-file-pdf"></i> Invoice
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <table class="table table-striped table-bordered mb-0">
+                    <!-- Removed bottom margin here -->
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Unit Price</th>
+                            <th>Qty</th>
+                            <th>Total Price</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in orderGroup)
+                        {
+                            <tr>
+                                <td>@item.ProductName</td>
+                                <td>@item.UnitPrice.ToString("C")</td>
+                                <td>@item.Quantity</td>
+                                <td>@item.TotalPrice.ToString("C")</td>
+                                @if (item == firstItem) // Show status only once per order
+                                {
+                                    <td>
+                                        @item.Status
+
+
+                                    </td>
+                                }
+                            </tr>
+                        }
+                        <tr>
+                            <td><strong>Total Amount:</strong></td>
+                            <td colspan="2"></td> <!-- Empty columns for alignment -->
+                            <td><strong>@firstItem.TotalAmount.ToString("C")</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            serialNo++; // Increment the serial number for each order
+        }
+    </div>
+}
+
+<style>
+    .order-summary {
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+    }
+
+    .order-header {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .order-info {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .invoice-button {
+        text-align: right;
+    }
+
+    .table thead th {
+        background-color: #343a40;
+        color: white;
+        text-align: center;
+    }
+
+    .table tbody td {
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .badge-warning {
+        background-color: #ffc107;
+        color: white;
+    }
+
+    .badge-success {
+        background-color: #28a745;
+        color: white;
+    }
+
+    .table {
+        margin-bottom: 0 !important; /* Force table bottom margin to 0 */
+    }
+
+    .order-summary {
+        margin-bottom: 30px !important; /* Adjust margin between orders */
+    }
+</style>

@@ -1,0 +1,93 @@
+﻿@model IEnumerable<NextGenRobotics.Models.Category>
+
+@{
+    ViewBag.Title = "Category Index";
+}
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const box = document.getElementById('hide');
+        if (box) {
+            setTimeout(() => {
+                box.style.display = 'none';
+            }, 2000);
+        }
+    });
+</script>
+
+@if (TempData["add"] != null)
+{
+    <div id="hide" class="alert alert-success">
+        <strong>@TempData["add"]</strong>
+    </div>
+}
+
+@if (TempData["edit"] != null)
+{
+    <div id="hide" class="alert alert-danger">
+        <strong>@TempData["edit"]</strong>
+    </div>
+}
+
+@if (TempData["delete"] != null)
+{
+    <div id="hide" class="alert alert-danger">
+        <strong>@TempData["delete"]</strong>
+    </div>
+}
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Category Index</h2>
+
+
+
+    <table class="table table-sm table-hover table-striped align-middle extra-small-font">
+        <thead class="table-light">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Name)</th>
+                <th>@Html.DisplayNameFor(model => model.Description)</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <a href="@Url.Action("Create")" class="btn btn-outline-success" title="Create New">
+            Add Category
+            <i class="fas fa-plus-circle"></i>
+        </a>
+
+        <br />
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Description)</td>
+                    <td>
+                        <div class="btn-group" role="group" aria-label="Actions">
+
+
+
+                            <!-- Edit Button with Icon -->
+                            <a href="@Url.Action("Edit", new { id = item.CategoryId })" class="btn btn-outline-primary btn-sm" title="Edit">
+                                <i class="fas fa-edit"></i>
+                            </a>
+
+                            <!-- Details Button with Icon -->
+                            <a href="@Url.Action("Details", new { id = item.CategoryId })" class="btn btn-outline-info btn-sm" title="View Details">
+                                <i class="fas fa-info-circle"></i>
+                            </a>
+
+                            <!-- Delete Button with Icon -->
+                            <a href="@Url.Action("Delete", new { id = item.CategoryId })" class="btn btn-outline-danger btn-sm" title="Delete" onclick="return confirm('Are you sure you want to delete this item?');">
+                                <i class="fas fa-trash-alt"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section Scripts {
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+}

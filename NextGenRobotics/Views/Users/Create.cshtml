@@ -1,0 +1,129 @@
+﻿@model NextGenRobotics.Models.User
+
+@{
+    ViewBag.Title = "Create User";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const box = document.getElementById('hide');
+        if (box) {
+            setTimeout(() => {
+                box.style.display = 'none';
+            }, 2000);
+        }
+    });
+</script>
+
+@if (TempData["msgun"] != null)
+{
+    <div id="hide" class="alert alert-danger">
+        <strong>@TempData["msgun"]</strong>
+    </div>
+}
+
+
+
+
+
+<h2 class="text-center mt-4">Create User</h2>
+
+@using (Html.BeginForm("Create", "Users", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="row justify-content-center mt-4">
+        <!-- Form Column -->
+        <div class="col-md-6 shadow p-4 rounded bg-light">
+            <h4 class="mb-3 text-center">Create a New User</h4>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "alert alert-danger" })
+
+            <!-- Name -->
+            <div class="mb-3 row">
+                @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "col-md-3 col-form-label fw-bold" })
+                <div class="col-md-9">
+                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <!-- Username -->
+            <div class="mb-3 row">
+                @Html.LabelFor(model => model.UserName, htmlAttributes: new { @class = "col-md-3 col-form-label fw-bold" })
+                <div class="col-md-9">
+                    @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <!-- Password -->
+            <div class="mb-3 row">
+                @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "col-md-3 col-form-label fw-bold" })
+                <div class="col-md-9">
+                    @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", type = "password" } })
+                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <!-- Retype Password -->
+            <div class="mb-3 row">
+                @Html.Label("Retype Password", htmlAttributes: new { @class = "col-md-3 col-form-label fw-bold" })
+                <div class="col-md-9">
+                    <input type="password" name="RetypePassword" class="form-control" />
+                    @Html.ValidationMessage("RetypePassword", "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3 row">
+                @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "col-md-3 col-form-label fw-bold" })
+                <div class="col-md-9">
+                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="mb-3 row">
+                @Html.LabelFor(model => model.PhoneNumber, htmlAttributes: new { @class = "col-md-3 col-form-label fw-bold" })
+                <div class="col-md-9">
+                    @Html.EditorFor(model => model.PhoneNumber, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.PhoneNumber, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <!-- Address -->
+            <div class="mb-3 row">
+                @Html.LabelFor(model => model.Address, htmlAttributes: new { @class = "col-md-3 col-form-label fw-bold" })
+                <div class="col-md-9">
+                    @Html.EditorFor(model => model.Address, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <!-- Upload Image -->
+            <div class="mb-3 row">
+                @Html.Label("Upload Image", htmlAttributes: new { @class = "col-md-3 col-form-label fw-bold" })
+                <div class="col-md-9">
+                    <input type="file" name="ImageFile" class="form-control" />
+                    @Html.ValidationMessageFor(model => model.ImageUrl, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="mb-3 row">
+                <div class="col-md-9 offset-md-3">
+                    <input type="submit" value="Create" class="btn btn-primary px-4" />
+                    <a href="@Url.Action("ClearSignUp", "Users")" class="btn btn-danger px-4 ms-2">Clear</a>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

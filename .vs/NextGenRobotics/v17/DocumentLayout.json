@@ -1,0 +1,894 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|c:\\users\\farha\\onedrive\\desktop\\nextgenrobotics\\nextgenrobotics\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDb__MSSQLLocalDB/NextGenRobotics.Context.AspRoboDB/True/SqlTable/dbo.Payments.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDb__MSSQLLocalDB/NextGenRobotics.Context.AspRoboDB/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\views\\orders\\ordersummary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\views\\orders\\ordersummary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\controllers\\categoriecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\controllers\\categoriecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDb__MSSQLLocalDB/NextGenRobotics.Context.AspRoboDB/True/SqlTable/dbo.Categories.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\views\\categorie\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\views\\categorie\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\views\\users\\landingpageview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\views\\users\\landingpageview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\views\\payments\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\views\\payments\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\views\\categorie\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\views\\categorie\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\controllers\\customercartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\controllers\\customercartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\context\\asprobodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\context\\asprobodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\models\\feedbacks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\models\\feedbacks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\views\\users\\viewcustomer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\views\\users\\viewcustomer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\views\\payments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\views\\payments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\views\\users\\superadmindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\views\\users\\superadmindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\viewmodels\\productcategoryvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\viewmodels\\productcategoryvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\views\\customercart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\views\\customercart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\controllers\\api\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\controllers\\api\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\views\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\views\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\views\\users\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\views\\users\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\views\\customerproduct\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\views\\customerproduct\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\viewmodels\\ordersummaryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\viewmodels\\ordersummaryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\views\\users\\addadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\views\\users\\addadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\views\\users\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\views\\users\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\views\\users\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\views\\users\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\views\\payments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\views\\payments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDb__MSSQLLocalDB/NextGenRobotics.Context.AspRoboDB/True/SqlTable/dbo.Products.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\views\\payments\\invoice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\views\\payments\\invoice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\views\\payments\\invoicepdf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\views\\payments\\invoicepdf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\viewmodels\\orderhistoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\viewmodels\\orderhistoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\viewmodels\\invoiceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\viewmodels\\invoiceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\views\\customerproduct\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\views\\customerproduct\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\controllers\\customerproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\controllers\\customerproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\nextgenrobotics\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C46F27A-800A-462C-A2A3-90BCD683ED2F}|NextGenRobotics\\NextGenRobotics.csproj|solutionrelative:nextgenrobotics\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Migrations\\202409300446358_up2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NextGenRobotics\\Migrations\\202409300446358_up2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Migrations\\202409300438033_uppro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NextGenRobotics\\Migrations\\202409300438033_uppro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Migrations\\202409300411580_pop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NextGenRobotics\\Migrations\\202409300411580_pop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Migrations\\202409300400212_adduserup1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NextGenRobotics\\Migrations\\202409300400212_adduserup1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Migrations\\202409300357066_adduservalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NextGenRobotics\\Migrations\\202409300357066_adduservalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PaymentsController.cs",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Controllers\\PaymentsController.cs",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Controllers\\PaymentsController.cs",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Controllers\\PaymentsController.cs",
+              "RelativeToolTip": "NextGenRobotics\\Controllers\\PaymentsController.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAIwC0AAACNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T17:15:41.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Web.config",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Web.config",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Web.config",
+              "RelativeToolTip": "NextGenRobotics\\Web.config",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAEQAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-09-30T04:50:05.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "202409300446358_up2.cs",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Migrations\\202409300446358_up2.cs",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Migrations\\202409300446358_up2.cs",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Migrations\\202409300446358_up2.cs",
+              "RelativeToolTip": "NextGenRobotics\\Migrations\\202409300446358_up2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T04:46:43.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Models\\Payment.cs",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Models\\Payment.cs",
+              "RelativeToolTip": "NextGenRobotics\\Models\\Payment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T04:44:45.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Models\\Category.cs",
+              "RelativeToolTip": "NextGenRobotics\\Models\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T04:43:55.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "202409300438033_uppro.cs",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Migrations\\202409300438033_uppro.cs",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Migrations\\202409300438033_uppro.cs",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Migrations\\202409300438033_uppro.cs",
+              "RelativeToolTip": "NextGenRobotics\\Migrations\\202409300438033_uppro.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T04:38:12.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "202409300411580_pop.cs",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Migrations\\202409300411580_pop.cs",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Migrations\\202409300411580_pop.cs",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Migrations\\202409300411580_pop.cs",
+              "RelativeToolTip": "NextGenRobotics\\Migrations\\202409300411580_pop.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T04:12:06.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "dbo.Payments [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDb__MSSQLLocalDB/NextGenRobotics.Context.AspRoboDB/True/SqlTable/dbo.Payments.sql",
+              "ToolTip": "dbo.Payments [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-09-30T04:47:37.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "202409300400212_adduserup1.cs",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Migrations\\202409300400212_adduserup1.cs",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Migrations\\202409300400212_adduserup1.cs",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Migrations\\202409300400212_adduserup1.cs",
+              "RelativeToolTip": "NextGenRobotics\\Migrations\\202409300400212_adduserup1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T04:00:29.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "202409300357066_adduservalidation.cs",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Migrations\\202409300357066_adduservalidation.cs",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Migrations\\202409300357066_adduservalidation.cs",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Migrations\\202409300357066_adduservalidation.cs",
+              "RelativeToolTip": "NextGenRobotics\\Migrations\\202409300357066_adduservalidation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T03:57:16.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Models\\User.cs",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Models\\User.cs",
+              "RelativeToolTip": "NextGenRobotics\\Models\\User.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAwwCsAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T22:05:51.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "NextGenRobotics\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAowEMAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T13:27:08.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "dbo.Users [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDb__MSSQLLocalDB/NextGenRobotics.Context.AspRoboDB/True/SqlTable/dbo.Users.sql",
+              "ToolTip": "dbo.Users [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-09-28T14:11:57.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "NextGenRobotics\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAYwFUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T13:54:16.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Models\\Product.cs",
+              "RelativeToolTip": "NextGenRobotics\\Models\\Product.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAA8wD0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T17:52:27.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CategorieController.cs",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Controllers\\CategorieController.cs",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Controllers\\CategorieController.cs",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Controllers\\CategorieController.cs",
+              "RelativeToolTip": "NextGenRobotics\\Controllers\\CategorieController.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAQwEIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T03:22:19.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "dbo.Categories [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDb__MSSQLLocalDB/NextGenRobotics.Context.AspRoboDB/True/SqlTable/dbo.Categories.sql",
+              "ToolTip": "dbo.Categories [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-09-30T03:41:28.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Categorie\\Index.cshtml",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Views\\Categorie\\Index.cshtml",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Categorie\\Index.cshtml",
+              "RelativeToolTip": "NextGenRobotics\\Views\\Categorie\\Index.cshtml",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAABQAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T03:15:43.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Payments\\Details.cshtml",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Views\\Payments\\Details.cshtml",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Payments\\Details.cshtml",
+              "RelativeToolTip": "NextGenRobotics\\Views\\Payments\\Details.cshtml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAgwEIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T03:17:46.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Categorie\\Details.cshtml",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Views\\Categorie\\Details.cshtml",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Categorie\\Details.cshtml",
+              "RelativeToolTip": "NextGenRobotics\\Views\\Categorie\\Details.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAB8AAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T03:12:19.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AspRoboDB.cs",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Context\\AspRoboDB.cs",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Context\\AspRoboDB.cs",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Context\\AspRoboDB.cs",
+              "RelativeToolTip": "NextGenRobotics\\Context\\AspRoboDB.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAWwCIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T01:46:52.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ViewCustomer.cshtml",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Users\\ViewCustomer.cshtml",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Views\\Users\\ViewCustomer.cshtml",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Users\\ViewCustomer.cshtml",
+              "RelativeToolTip": "NextGenRobotics\\Views\\Users\\ViewCustomer.cshtml",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAuwFoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T01:32:07.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ProductCategoryVM.cs",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\ViewModels\\ProductCategoryVM.cs",
+              "RelativeDocumentMoniker": "NextGenRobotics\\ViewModels\\ProductCategoryVM.cs",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\ViewModels\\ProductCategoryVM.cs",
+              "RelativeToolTip": "NextGenRobotics\\ViewModels\\ProductCategoryVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T01:19:56.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Feedbacks.cs",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Models\\Feedbacks.cs",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Models\\Feedbacks.cs",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Models\\Feedbacks.cs",
+              "RelativeToolTip": "NextGenRobotics\\Models\\Feedbacks.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T01:56:29.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LandingPageView.cshtml",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Users\\LandingPageView.cshtml",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Views\\Users\\LandingPageView.cshtml",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Users\\LandingPageView.cshtml",
+              "RelativeToolTip": "NextGenRobotics\\Views\\Users\\LandingPageView.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T20:46:53.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Users\\Details.cshtml",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Views\\Users\\Details.cshtml",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Users\\Details.cshtml",
+              "RelativeToolTip": "NextGenRobotics\\Views\\Users\\Details.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACoAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-28T16:15:42.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "NextGenRobotics\\Views\\Product\\Index.cshtml",
+              "ViewState": "AQIAAIQAAAAAAAAAAAAAAIkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T14:38:14.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Users\\Index.cshtml",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Views\\Users\\Index.cshtml",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Users\\Index.cshtml",
+              "RelativeToolTip": "NextGenRobotics\\Views\\Users\\Index.cshtml",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAEkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-28T16:37:01.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "NextGenRobotics\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAGAAAABpAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-28T07:54:21.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "NextGenRobotics\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T13:08:18.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\CustomerProduct\\Index.cshtml",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Views\\CustomerProduct\\Index.cshtml",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\CustomerProduct\\Index.cshtml",
+              "RelativeToolTip": "NextGenRobotics\\Views\\CustomerProduct\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T15:21:23.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "OrderSummaryViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\ViewModels\\OrderSummaryViewModel.cs",
+              "RelativeDocumentMoniker": "NextGenRobotics\\ViewModels\\OrderSummaryViewModel.cs",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\ViewModels\\OrderSummaryViewModel.cs",
+              "RelativeToolTip": "NextGenRobotics\\ViewModels\\OrderSummaryViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T17:01:29.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrderSummary.cshtml",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Orders\\OrderSummary.cshtml",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Views\\Orders\\OrderSummary.cshtml",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Orders\\OrderSummary.cshtml",
+              "RelativeToolTip": "NextGenRobotics\\Views\\Orders\\OrderSummary.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T17:12:06.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "AddAdmin.cshtml",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Users\\AddAdmin.cshtml",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Views\\Users\\AddAdmin.cshtml",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Users\\AddAdmin.cshtml",
+              "RelativeToolTip": "NextGenRobotics\\Views\\Users\\AddAdmin.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T22:10:18.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Orders\\Index.cshtml",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Views\\Orders\\Index.cshtml",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Orders\\Index.cshtml",
+              "RelativeToolTip": "NextGenRobotics\\Views\\Orders\\Index.cshtml",
+              "ViewState": "AQIAAOIAAAAAAAAAAAAAAAYBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T13:43:23.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "SuperAdminDashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Users\\SuperAdminDashboard.cshtml",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Views\\Users\\SuperAdminDashboard.cshtml",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Users\\SuperAdminDashboard.cshtml",
+              "RelativeToolTip": "NextGenRobotics\\Views\\Users\\SuperAdminDashboard.cshtml",
+              "ViewState": "AQIAACwAAAAAAAAAAAAgwEMAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T22:03:11.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Users\\Create.cshtml",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Views\\Users\\Create.cshtml",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Users\\Create.cshtml",
+              "RelativeToolTip": "NextGenRobotics\\Views\\Users\\Create.cshtml",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAAAHwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-28T15:35:17.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Users\\Login.cshtml",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Views\\Users\\Login.cshtml",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Users\\Login.cshtml",
+              "RelativeToolTip": "NextGenRobotics\\Views\\Users\\Login.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAADwv0gAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-28T14:25:40.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Users\\Edit.cshtml",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Views\\Users\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Users\\Edit.cshtml",
+              "RelativeToolTip": "NextGenRobotics\\Views\\Users\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-28T14:56:22.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Product\\Create.cshtml",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Views\\Product\\Create.cshtml",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Product\\Create.cshtml",
+              "RelativeToolTip": "NextGenRobotics\\Views\\Product\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-28T10:51:33.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Product\\Edit.cshtml",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Views\\Product\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Product\\Edit.cshtml",
+              "RelativeToolTip": "NextGenRobotics\\Views\\Product\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-28T10:50:52.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Product\\Details.cshtml",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Views\\Product\\Details.cshtml",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Product\\Details.cshtml",
+              "RelativeToolTip": "NextGenRobotics\\Views\\Product\\Details.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T14:22:45.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Payments\\Create.cshtml",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Views\\Payments\\Create.cshtml",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Payments\\Create.cshtml",
+              "RelativeToolTip": "NextGenRobotics\\Views\\Payments\\Create.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-28T15:46:33.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "dbo.Products [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDb__MSSQLLocalDB/NextGenRobotics.Context.AspRoboDB/True/SqlTable/dbo.Products.sql",
+              "ToolTip": "dbo.Products [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-09-29T17:53:10.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "NextGenRobotics\\Controllers\\OrdersController.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAIwHQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T13:23:07.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Invoice.cshtml",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Payments\\Invoice.cshtml",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Views\\Payments\\Invoice.cshtml",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Payments\\Invoice.cshtml",
+              "RelativeToolTip": "NextGenRobotics\\Views\\Payments\\Invoice.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T17:04:07.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CustomerCartController.cs",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Controllers\\CustomerCartController.cs",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Controllers\\CustomerCartController.cs",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Controllers\\CustomerCartController.cs",
+              "RelativeToolTip": "NextGenRobotics\\Controllers\\CustomerCartController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwBMAAACNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T17:18:57.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\CustomerCart\\Index.cshtml",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Views\\CustomerCart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\CustomerCart\\Index.cshtml",
+              "RelativeToolTip": "NextGenRobotics\\Views\\CustomerCart\\Index.cshtml",
+              "ViewState": "AQIAAM8AAAAAAAAAAAAAAOMAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T14:33:14.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Invoicepdf.cshtml",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Payments\\Invoicepdf.cshtml",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Views\\Payments\\Invoicepdf.cshtml",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Payments\\Invoicepdf.cshtml",
+              "RelativeToolTip": "NextGenRobotics\\Views\\Payments\\Invoicepdf.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T17:05:32.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "OrderHistoryViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\ViewModels\\OrderHistoryViewModel.cs",
+              "RelativeDocumentMoniker": "NextGenRobotics\\ViewModels\\OrderHistoryViewModel.cs",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\ViewModels\\OrderHistoryViewModel.cs",
+              "RelativeToolTip": "NextGenRobotics\\ViewModels\\OrderHistoryViewModel.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T17:02:23.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "InvoiceViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\ViewModels\\InvoiceViewModel.cs",
+              "RelativeDocumentMoniker": "NextGenRobotics\\ViewModels\\InvoiceViewModel.cs",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\ViewModels\\InvoiceViewModel.cs",
+              "RelativeToolTip": "NextGenRobotics\\ViewModels\\InvoiceViewModel.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T17:00:29.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Controllers\\api\\ProductsController.cs",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Controllers\\api\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Controllers\\api\\ProductsController.cs",
+              "RelativeToolTip": "NextGenRobotics\\Controllers\\api\\ProductsController.cs",
+              "ViewState": "AQIAAG4AAAAAAAAAAAAcwIYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T14:39:34.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Payments\\Index.cshtml",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Views\\Payments\\Index.cshtml",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\Payments\\Index.cshtml",
+              "RelativeToolTip": "NextGenRobotics\\Views\\Payments\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T14:38:50.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\CustomerProduct\\Details.cshtml",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Views\\CustomerProduct\\Details.cshtml",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Views\\CustomerProduct\\Details.cshtml",
+              "RelativeToolTip": "NextGenRobotics\\Views\\CustomerProduct\\Details.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T14:22:18.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "NextGenRobotics\\App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "NextGenRobotics\\App_Start\\RouteConfig.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T13:23:25.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "CustomerProductController.cs",
+              "DocumentMoniker": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Controllers\\CustomerProductController.cs",
+              "RelativeDocumentMoniker": "NextGenRobotics\\Controllers\\CustomerProductController.cs",
+              "ToolTip": "C:\\Users\\farha\\OneDrive\\Desktop\\NextGenRobotics\\NextGenRobotics\\Controllers\\CustomerProductController.cs",
+              "RelativeToolTip": "NextGenRobotics\\Controllers\\CustomerProductController.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T17:22:40.725Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+﻿@model IEnumerable<NextGenRobotics.ViewModels.InvoiceViewModel>
+
+@{
+    // Initialize a variable to keep track of the previous OrderNo
+    int previousOrderNo = 0;
+    double totalAmount = 0; // Variable to hold the total amount for the order
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Order No</th>
+            <th>Product Name</th>
+            <th>Unit Price</th>
+            <th>Quantity</th>
+            <th>Total Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <!-- Show Order No only if it's different from the previous one -->
+                <td>
+                    @if (previousOrderNo != item.OrderNo)
+                    {
+                        @item.OrderNo
+                        // Update previousOrderNo to the current one
+                        previousOrderNo = item.OrderNo;
+                    }
+                </td>
+
+                <!-- Other fields -->
+                <td>@item.ProductName</td>
+                <td>@item.UnitPrice.ToString("C")</td>
+                <td>@item.Quantity</td>
+                <td>@item.TotalPrice.ToString("C")</td>
+            </tr>
+
+            // Assign TotalAmount from the first row (since it's the same for all)
+            totalAmount = item.TotalAmount;
+        }
+
+        <!-- Add a new row for TotalAmount after all the product rows -->
+        <tr>
+            <td colspan="4" class="text-right"><strong>Total Amount:</strong></td>
+            <td><strong>@totalAmount.ToString("C")</strong></td>
+        </tr>
+    </tbody>
+</table>

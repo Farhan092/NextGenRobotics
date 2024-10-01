@@ -1,0 +1,127 @@
+﻿@model NextGenRobotics.Models.Payment
+
+@{
+    ViewBag.Title = "Payment";
+}
+
+<h2 class="text-center">Payment</h2>
+
+@using (Html.BeginForm("Create", "Payments", FormMethod.Post)) // Single form for both payment modes
+{
+    @Html.AntiForgeryToken()
+
+    <div class="container d-flex justify-content-center">
+        <div class="form-horizontal col-md-6">
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <!-- Radio buttons for Payment Mode with color selection -->
+            <div class="btn-group d-flex justify-content-center mb-4" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="PaymentMode" id="btnradio1" autocomplete="off" value="Credit Card" checked>
+                <label class="btn btn-outline-primary text-white bg-primary" for="btnradio1" id="creditCardTab">Credit Card</label>
+
+                <input type="radio" class="btn-check" name="PaymentMode" id="btnradio2" autocomplete="off" value="Cash On Delivery">
+                <label class="btn btn-outline-primary" for="btnradio2" id="cashOnDeliveryTab">Cash On Delivery</label>
+            </div>
+
+            <!-- Credit Card Form Fields -->
+            <div id="creditCardForm" style="display:block;">
+                <div class="form-group row">
+                    <label class="control-label col-md-4 text-md-right">User Name</label>
+                    <div class="col-md-8">
+                        @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="control-label col-md-4 text-md-right">Card No</label>
+                    <div class="col-md-8">
+                        @Html.EditorFor(model => model.CardNo, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.CardNo, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="control-label col-md-4 text-md-right">Exp Date</label>
+                    <div class="col-md-8">
+                        @Html.EditorFor(model => model.ExpDate, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.ExpDate, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="control-label col-md-4 text-md-right">CVV</label>
+                    <div class="col-md-8">
+                        @Html.EditorFor(model => model.Cvv, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Cvv, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <!-- Address Field for Credit Card -->
+                <div class="form-group row">
+                    <label class="control-label col-md-4 text-md-right">Address</label>
+                    <div class="col-md-8">
+                        @Html.EditorFor(model => model.Address, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cash On Delivery Message -->
+            <div id="cashOnDeliveryForm" style="display:none;">
+                <div class="form-group">
+                    <div class="col-md-12 text-center">
+                        <p class="text-danger" style="font-weight:bold;">Cash on Delivery service is not available.</p>
+                    </div>
+                </div>
+            </div>
+            <br />
+
+            <!-- Submit button -->
+            <div class="form-group row">
+                <div class="col-md-12 text-center">
+                    <input type="submit" value="Confirm Payment" class="btn btn-primary" id="submitPayment" />
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script>
+        $(document).ready(function () {
+            function toggleForms() {
+                var selectedMethod = $('input[name="PaymentMode"]:checked').val();
+                if (selectedMethod === 'Credit Card') {
+                    $('#creditCardForm').show();
+                    $('#cashOnDeliveryForm').hide();
+                    $('#submitPayment').prop('disabled', false); // Enable submit button for Credit Card
+                    setActiveTab('#creditCardTab');
+                } else if (selectedMethod === 'Cash On Delivery') {
+                    $('#creditCardForm').hide();
+                    $('#cashOnDeliveryForm').show();
+                    $('#submitPayment').prop('disabled', true); // Disable submit button for Cash On Delivery
+                    setActiveTab('#cashOnDeliveryTab');
+                }
+            }
+
+            function setActiveTab(tabId) {
+                $('.btn-outline-primary').removeClass('btn-primary text-white bg-primary'); // Remove active class from all tabs
+                $(tabId).addClass('btn-primary text-white bg-primary'); // Add active class to selected tab
+            }
+
+            // Initial load
+            toggleForms();
+
+            // When radio button changes
+            $('input[name="PaymentMode"]').change(function () {
+                toggleForms();
+            });
+        });
+    </script>
+}

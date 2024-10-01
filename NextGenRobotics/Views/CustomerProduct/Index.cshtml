@@ -1,0 +1,65 @@
+﻿@model IEnumerable<NextGenRobotics.Models.Product>
+@using NextGenRobotics.Models
+
+
+@{
+    ViewBag.Title = "Products";
+}
+
+<div class="container my-4">
+    <div class="row">
+        <div class="col-12 d-flex justify-content-between align-items-center mb-4">
+            <h2 class="mb-0">Products</h2>
+            
+    </div>
+
+    <!-- Product Grid -->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        @foreach (var item in Model)
+        {
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <!-- Product Image -->
+                    @if (!string.IsNullOrEmpty(item.PicturePath))
+                    {
+                        <img src="@Url.Content(item.PicturePath)" class="card-img-top" alt="@item.Name" style="height: 200px; object-fit: cover;">
+                    }
+                    else
+                    {
+                        <img src="~/Content/Images/no-image.png" class="card-img-top" alt="No Image Available" style="height: 200px; object-fit: cover;">
+                    }
+
+                    <!-- Product Details -->
+                <div class="card-body">
+                    <h5 class="card-title text-truncate">@Html.DisplayFor(modelItem => item.Name)</h5>
+                    <p class="card-text text-muted">
+                    
+                    <p class="card-text mb-1">Price: @item.UnitPrice.ToString("C")</p>
+                    Stock Status:
+                    <span class="badge @(item.StockStatus == StockStatus.InStock ? "bg-success" : "bg-danger")">
+                        @Html.DisplayFor(modelItem => item.StockStatus)
+                    </span>
+
+                    </p>
+                </div>
+
+                    <!-- Action Buttons -->
+                    <div class="card-footer bg-white border-top-0">
+                        <div class="d-flex justify-content-between">
+
+                            <form action="@Url.Action("AddToCart", "CustomerCart")" method="post">
+                                <input type="hidden" name="productId" value="@item.ProductId" />
+                                <input type="hidden" name="quantity" value="1" min="1" />
+                                <button type="submit" class="btn btn-primary">Add to Cart</button>
+                            </form>
+
+                           
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+

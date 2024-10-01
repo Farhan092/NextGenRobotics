@@ -1,0 +1,36 @@
+﻿@if (Session["username"] != null && Session["Role"].ToString().Equals("SuperAdmin"))
+{
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+            @Html.ActionLink("Welcome " + Session["username"].ToString(), "SuperAdminDashboard", "Users", new { area = "" }, new { @class = "nav-link" })
+        </li>
+    </ul>
+}
+else if (Session["username"] != null && Session["Role"].ToString().Equals("Admin"))
+{
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+            @Html.ActionLink("Welcome " + Session["username"].ToString(), "Index", "Orders", new { area = "" }, new { @class = "nav-link" })
+        </li>
+    </ul>
+}
+else if (Session["username"] != null && Session["Role"].ToString().Equals("Customer"))
+{
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+            @Html.ActionLink("Welcome " + Session["username"].ToString(), "LandingPageView", "Users", new { area = "" }, new { @class = "nav-link" })
+        </li>
+    </ul>
+}
+else
+{
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+            @Html.ActionLink("Login", "Login", "Users", new { area = "" }, new { @class = "nav-link" })
+        </li>
+        <li class="nav-item">
+            @Html.ActionLink("Sign Up", "Create", "Users", new { area = "" }, new { @class = "nav-link" })
+        </li>
+    </ul>
+}
+

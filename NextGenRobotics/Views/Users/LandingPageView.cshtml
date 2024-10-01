@@ -1,0 +1,327 @@
+﻿@model NextGenRobotics.ViewModels.ProductCategoryVM
+@using NextGenRobotics.Models
+
+@{
+    ViewBag.Title = "Home Page";
+
+}
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const box = document.getElementById('hide');
+        if (box) {
+            setTimeout(() => {
+                box.style.display = 'none';
+            }, 2000);
+        }
+    });
+</script>
+
+@if (TempData["Msg"] != null)
+{
+    <div id="hide" class="alert alert-success">
+        <strong>@TempData["Msg"]</strong>
+    </div>
+}
+
+@if (TempData["MsgQn"] != null)
+{
+    <div id="hide" class="alert alert-danger">
+        <strong>@TempData["MsgQn"]</strong>
+    </div>
+}
+
+@if (TempData["LoginRequiredMessage"] != null)
+{
+    <div id="hide" class="alert alert-danger" role="alert">
+        <strong>@TempData["LoginRequiredMessage"]</strong>
+    </div>
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGenRobotics - Shop</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+
+
+        /* Scope the styles to the specific view using unique classes */
+        .shop-sidebar {
+            width: 200px; /* Set a fixed width for the sidebar */
+            max-width: 100%; /* Ensure it doesn't exceed the container */
+            margin-top: 105px;
+        }
+
+        .shop-nav-link {
+            padding: 0.5rem 0.75rem; /* Adjust padding for each link */
+            white-space: nowrap;
+            /* Prevent text wrapping */
+            font-size: large; /* Make the text bold */
+            color: black; /* Set the default text color to black */
+            transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Smooth transition for hover */
+            text-decoration: none;
+        }
+
+            /* Sidebar hover effect */
+            .shop-nav-link:hover {
+                background-color: #ffffff !important; /* Set the background color to white on hover */
+                color: #b6ff00 !important; /* Set text color to light green on hover */
+            }
+
+        .shop-nav-item {
+            margin-bottom: 0.5rem; /* Space between each nav item */
+        }
+
+        .shop-main-content {
+            margin-left: 60px; /* Adjust this width according to sidebar */
+            padding: 1rem;
+        }
+
+
+
+
+        .shop-carousel-item {
+            background-color: #001f3f;
+            color: white;
+            padding: 2rem;
+        }
+
+            .shop-carousel-item h1 {
+                font-size: 2.5rem;
+            }
+
+            .shop-carousel-item p {
+                font-size: 1.2rem;
+            }
+
+        .shop-product-card {
+            border: none;
+        }
+
+            .shop-product-card img {
+                max-width: 100%;
+                height: auto;
+            }
+
+        .shop-category-menu {
+            padding: 10px;
+            background-color: #f8f9fa; /* Light background for a cleaner look */
+            border: 1px solid #dee2e6; /* Add a subtle border */
+            border-radius: 8px; /* Rounded corners */
+            margin-bottom: 1rem; /* Space below the category menu */
+        }
+
+        .shop-category-item {
+            padding: 10px 15px; /* Increased padding for clickable areas */
+            border-radius: 10px; /* Slightly rounded corners */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+        }
+
+            .shop-category-item a {
+                text-decoration: none;
+                color: #333;
+                font-weight: 500; /* Slightly bolder font */
+            }
+
+            .shop-category-item:hover {
+                background-color: #b6ff00; /* Highlight on hover */
+                color: white; /* Change text color to white */
+            }
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid">
+
+        
+        <div class="row">
+            
+            <!-- Scoped Sidebar -->
+            <nav class="col-md-3 col-lg-2 shop-sidebar">
+                <h4>All Categories</h4>
+                <ul class="nav flex-column">
+                    @foreach (var category in ViewBag.Categories)
+                    {
+                        <li class="shop-nav-item">
+                            <a class="shop-nav-link" href="@Url.Action("Details", "Categorie", new { id = category.CategoryId })">@category.Name</a>
+                        </li>
+                    }
+                </ul>
+            </nav>
+
+
+            <!-- Main Content -->
+            <div class="col shop-main-content">
+                <!-- Horizontal Category Menu -->
+                <div class="shop-category-menu d-flex justify-content-between flex-wrap">
+                    <div class="shop-category-item text-center flex-fill mx-1">
+                        <a href="#">Sensors</a>
+                    </div>
+                    <div class="shop-category-item text-center flex-fill mx-1">
+                        <a href="#">AI Kits</a>
+                    </div>
+                    <div class="shop-category-item text-center flex-fill mx-1">
+                        <a href="#">Arduino</a>
+                    </div>
+                    <div class="shop-category-item text-center flex-fill mx-1">
+                        <a href="#">3D Printers</a>
+                    </div>
+                    <div class="shop-category-item text-center flex-fill mx-1">
+                        <a href="#">Raspberry Pi</a>
+                    </div>
+                </div>
+
+                <!-- Carousel Wrapper -->
+                <div class="shop-carousel-container mx-auto">
+                    <div id="carouselExampleIndicators" class="carousel slide mt-4" data-bs-ride="carousel" data-bs-interval="5000">
+                        <div class="carousel-inner">
+                            <!-- First carousel item -->
+                            <div class="carousel-item active shop-carousel-item">
+                                <div class="d-flex flex-column align-items-center justify-content-center text-center">
+                                    <img src="https://th.bing.com/th?id=OSK.HEROiuvhV1ssV0qOcbi-sKrxQ-GCzm02nkJreT6fGtm5xJY&w=472&h=280&c=13&rs=2&o=6&pid=SANGAM" class="img-fluid" alt="Robotics Equipment 1" style="max-height: 180px; object-fit: cover;">
+                                    <h1>All robotics equipment are available here!</h1>
+
+                                    <a class="btn btn-outline-light btn-lg" href="#">Order Now</a>
+                                </div>
+                            </div>
+
+                            <!-- Second carousel item -->
+                            <div class="carousel-item shop-carousel-item">
+                                <div class="d-flex flex-column align-items-center justify-content-center text-center">
+                                    <img src="https://th.bing.com/th/id/OIP.eJvtuMoJOqWoVjmAbrgTCAHaFd?w=244&h=180&c=7&r=0&o=5&pid=1.7" class="img-fluid" alt="Robotics Equipment 2" style="max-height: 180px; object-fit: cover;">
+                                    <h1>Build your own robots now!</h1>
+
+                                    <a class="btn btn-outline-light btn-lg" href="#">Explore Now</a>
+                                </div>
+                            </div>
+
+                            <!-- Third carousel item -->
+                            <div class="carousel-item shop-carousel-item">
+                                <div class="d-flex flex-column align-items-center justify-content-center text-center">
+                                    <img src="https://ts3.mm.bing.net/th?id=OIP.xrn70pqqXbf8IO-t49TAOwHaEK&pid=15.1" class="img-fluid" alt="Robotics Equipment 3" style="max-height: 180px; object-fit: cover;">
+                                    <h1>Top-quality robotics tools and equipment</h1>
+
+
+                                    <a class="btn btn-outline-light btn-lg" href="#">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Carousel Controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <!-- Product Section -->
+                <div class="container mt-4">
+                    <h2 class="text-left">Our Products</h2>
+                    <div class="form-group col-md-2">
+                        <input type="text" id="searchInput" class="form-control" placeholder="Search products...">
+                    </div>
+
+                    <br />
+                    <div class="row" id="productRow">
+                        @foreach (var item in Model.Products)
+                        {
+                            <div class="col-md-3 mb-4 product-card">
+                                <div class="card shop-product-card h-100">
+                                    <!-- Product Image -->
+                                    @if (!string.IsNullOrEmpty(item.PicturePath))
+                                    {
+                                        <img src="@Url.Content(item.PicturePath)" class="card-img-top" alt="@item.Name" style="height: 200px; object-fit: cover;">
+                                    }
+                                    else
+                                    {
+                                        <img src="~/Content/Images/no-image.png" class="card-img-top" alt="No Image Available" style="height: 200px; object-fit: cover;">
+                                    }
+
+                                    <!-- Product Details -->
+                                    <div class="card-body">
+                                        <h5 class="card-title text-truncate">@Html.DisplayFor(modelItem => item.Name)</h5>
+                                        <p class="card-text text-muted">
+                                        <p class="card-text mb-1">Price: @item.UnitPrice.ToString("C")</p>
+                                        Stock Status:
+                                        <span class="badge @(item.StockStatus == StockStatus.InStock ? "bg-success" : "bg-danger")">
+                                            @Html.DisplayFor(modelItem => item.StockStatus)
+                                        </span>
+                                        </p>
+                                    </div>
+
+                                    <!-- Action Buttons -->
+                                    <div class="card-footer bg-white border-top-0">
+                                        <div class="d-flex justify-content-between">
+                                            <form action="@Url.Action("AddToCart", "CustomerCart")" method="post">
+                                                <input type="hidden" name="productId" value="@item.ProductId" />
+                                                <input type="hidden" name="quantity" value="1" min="1" />
+                                                <button type="submit" class="btn btn-primary">Add to Cart</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            // jQuery search function for the product cards
+            $('#searchInput').on('keyup', function () {
+                var value = $(this).val().toLowerCase();
+
+                // Iterate through each product card and filter based on the search value
+                $('.product-card').filter(function () {
+                    $(this).toggle($(this).find('.card-title').text().toLowerCase().indexOf(value) > -1);
+                });
+
+                // Maintain Bootstrap's row-wise layout by clearing floated elements
+                $('#productRow').find('.product-card:visible').each(function (index, element) {
+                    $(element).removeClass('col-md-3').addClass('col-md-3'); // Reset the column class for visible elements
+                });
+            });
+        });
+    </script>
+}
+
+
+

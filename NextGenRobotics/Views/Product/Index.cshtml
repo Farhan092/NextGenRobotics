@@ -1,0 +1,150 @@
+﻿@model IEnumerable<NextGenRobotics.Models.Product>
+@using NextGenRobotics.Models
+
+@{
+    ViewBag.Title = "Products";
+    int rowNumber = 1; // Initialize a counter for the row number
+}
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const box = document.getElementById('hide');
+        if (box) {
+            setTimeout(() => {
+                box.style.display = 'none';
+            }, 2000);
+        }
+    });
+</script>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div id="hide" class="alert alert-success">
+        <strong>@TempData["SuccessMessage"]</strong>
+    </div>
+}
+
+@if (TempData["msgedit"] != null)
+{
+    <div id="hide" class="alert alert-success">
+        <strong>@TempData["msgedit"]</strong>
+    </div>
+}
+
+
+<div class="form-group col-md-2">
+    <input type="text" id="searchInput" class="form-control" placeholder="Search products...">
+</div>
+
+
+<div class="container my-4 pb-5">
+    <div class="row">
+        <div class="col-12 d-flex justify-content-between align-items-center mb-4">
+            <h2 class="mb-0">Products</h2>
+        </div>
+    </div>
+
+    <!-- Product List -->
+    <div class="table-responsive" style="max-height: 700px; overflow-y: auto;">
+        <table class="table table-sm table-hover table-striped align-middle extra-small-font" id="productsTable">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Stock Status</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- Create New Button with Icon -->
+                <a href="@Url.Action("Create")" class="btn btn-outline-success btn-sm" title="Create New">
+                    Add Product
+                    <i class="fas fa-plus-circle"></i>
+                </a>
+                <br>
+                <br>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <!-- Row Number -->
+                        <th scope="row">@rowNumber</th>
+
+                        <!-- Product Image -->
+                        <td style="width: 150px;">
+                            @if (!string.IsNullOrEmpty(item.PicturePath))
+                            {
+                                <img src="@Url.Content(item.PicturePath)" alt="@item.Name" class="img-fluid rounded" style="height: 100px; object-fit: cover;">
+                            }
+                            else
+                            {
+                                <img src="~/Content/Images/no-image.png" alt="No Image Available" class="img-fluid rounded" style="height: 100px; object-fit: cover;">
+                            }
+                        </td>
+
+                        <!-- Product Name -->
+                        <td>
+                            <h5 class="mb-0">@Html.DisplayFor(modelItem => item.Name)</h5>
+                        </td>
+
+                        <!-- Stock Status -->
+                        <td>
+                            <span class="badge @(item.StockStatus == StockStatus.InStock ? "bg-success" : "bg-danger")">
+                                @Html.DisplayFor(modelItem => item.StockStatus)
+                            </span>
+                        </td>
+
+                        <!-- Action Buttons with Icons -->
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Actions">
+                                <!-- Edit Button with Icon -->
+                                <a href="@Url.Action("Edit", new { id = item.ProductId })" class="btn btn-outline-primary btn-sm" title="Edit">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+
+                                <!-- Details Button with Icon -->
+                                <a href="@Url.Action("Details", new { id = item.ProductId })" class="btn btn-outline-info btn-sm" title="View Details">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+
+                                <!-- Delete Button with Icon -->
+                                <a href="@Url.Action("Delete", new { id = item.ProductId })" class="btn btn-outline-danger btn-sm" title="Delete">
+                                    <i class="fas fa-trash-alt"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+
+@@rowNumber++; // Increment the counter for the next row
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+<style>
+    .extra-small-font {
+        font-size: 1rem; /* 10px */
+    }
+
+    table.table td, table.table th {
+        vertical-align: middle; /* Vertically centers content */
+    }
+</style>
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            // jQuery search function for the products table
+            $('#searchInput').on('keyup', function () {
+                var value = $(this).val().toLowerCase();
+                $('#productsTable tbody tr').filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+}

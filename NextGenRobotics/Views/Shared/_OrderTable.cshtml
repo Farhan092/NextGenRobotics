@@ -1,0 +1,152 @@
+﻿@model IEnumerable<NextGenRobotics.ViewModels.OrderViewModel>
+
+<!-- Bootstrap table with responsive design -->
+<div class="table-responsive" style="max-height: 400px; overflow-y: auto; outline: none; box-shadow: none; border: none;">
+    <table class="table table-striped table-hover table-bordered table-sm align-middle mb-0">
+        <thead class="table-dark text-center">
+            <tr>
+                <th scope="col">Order ID</th>
+                <th scope="col">Customer Name</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col">Total Amount</th>
+                <th scope="col">Order Date</th>
+                <th scope="col">Shipping Address</th>
+                <th scope="col">Status</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var order in Model)
+            {
+                <tr class="text-center" data-bs-toggle="collapse" data-bs-target="#products-@order.OrderId" aria-expanded="false" aria-controls="products-@order.OrderId">
+                    <td class="text-center">@order.OrderId</td>
+                    <td>@order.UserName</td>
+                    <td>@order.UserPhoneNumber</td>
+                    <td class="text-center">@order.TotalAmount.ToString("C")</td>
+                    <td>@order.OrderDate.ToString("yyyy-MM-dd")</td>
+                    <td>@order.ShippingAddress</td>
+                    <td class="text-center">
+                        <!-- Conditional status badge rendering -->
+                        @if (order.Status == "Pending")
+                        {
+                            <span class="badge bg-warning text-dark">Pending</span>
+                        }
+                        else if (order.Status == "Confirmed")
+                        {
+                            <span class="badge bg-success">Confirmed</span>
+                        }
+                        else if (order.Status == "Shipped")
+                        {
+                            <span class="badge bg-info text-dark">Shipped</span>
+                        }
+                        else if (order.Status == "Canceled")
+                        {
+                            <span class="badge bg-danger">Canceled</span>
+                        }
+                    </td>
+                    <td style="position: relative;">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton-@order.OrderId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Change Status
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton-@order.OrderId">
+                                @using (Html.BeginForm("UpdateStatus", "Orders", FormMethod.Post, new { id = "form-" + order.OrderId }))
+                                {
+                                    @Html.Hidden("orderId", order.OrderId)
+                                    <a class="dropdown-item" href="#" onclick="changeStatus('@order.OrderId', 'Pending'); return false;">Pending</a>
+                                    <a class="dropdown-item" href="#" onclick="changeStatus('@order.OrderId', 'Confirmed'); return false;">Confirmed</a>
+                                    <a class="dropdown-item" href="#" onclick="changeStatus('@order.OrderId', 'Shipped'); return false;">Shipped</a>
+                                    <a class="dropdown-item" href="#" onclick="changeStatus('@order.OrderId', 'Canceled'); return false;">Canceled</a>
+                                    @Html.Hidden("status", order.Status, new { id = "status-" + order.OrderId })
+                                }
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- Product details will be shown here upon clicking the row -->
+                <tr class="collapse" id="products-@order.OrderId">
+                    <td colspan="8">
+                        <div class="container">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>Product Name</th>
+                                        <th>Quantity</th>
+                                        <th>Total Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var product in order.Products)
+                                    {
+                                        <tr>
+                                            <td>@product.ProductName</td>
+                                            <td>@product.Quantity</td>
+                                            <td>@product.TotalPrice.ToString("C")</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- JavaScript for handling the dropdown status change and form submission -->
+<script>
+    function changeStatus(orderId, status) {
+        document.getElementById('status-' + orderId).value = status; // Set the hidden status field
+        document.getElementById('form-' + orderId).submit(); // Submit the form
+    }
+</script>
+
+<!-- Styling adjustments for table and dropdown -->
+<style>
+    .table-sm td, .table-sm th {
+        padding: 0.35rem; /* Reduced padding for compact design */
+        font-size: 0.875rem; /* Smaller font size for a better fit */
+    }
+
+    .badge {
+        font-size: 0.75rem; /* Smaller badge for statuses */
+    }
+
+    .dropdown-menu {
+        font-size: 0.75rem; /* Smaller font for dropdown items */
+        z-index: 1050; /* Ensure the dropdown appears above the table */
+        position: absolute; /* Properly position the dropdown */
+        transform: translate3d(0, 0, 0); /* Prevent clipping of the dropdown */
+    }
+
+    td {
+        position: relative; /* Position relative for dropdown alignment */
+        overflow: visible; /* Ensure dropdown is not hidden */
+    }
+
+    .table-responsive {
+        
+        outline: none; /* Prevent clipping of the dropdown in the responsive container */
+    }
+
+    .dropdown-item:hover, .dropdown-item:focus {
+        background-color: white; /* Your preferred background color */
+        color: #ffffff; /* Your preferred text color */
+    }
+
+    .collapse.show {
+        background-color: white; /* Set to white */
+    }
+
+    .collapse {
+        background-color: white; /* Ensure collapsed rows start with a white background */
+    }
+
+    .table-primary {
+        background-color: inherit !important;
+    }
+
+   
+</style>

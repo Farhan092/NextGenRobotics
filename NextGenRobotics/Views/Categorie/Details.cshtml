@@ -1,0 +1,56 @@
+﻿@model NextGenRobotics.Models.Category
+
+@{
+    ViewBag.Title = "Category Details";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center">Category Details</h2>
+
+    <div class="card">
+        <div class="card-header">
+            <h4 class="mb-0">Category Information</h4>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Name)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Description)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Description)
+                </dd>
+            </dl>
+        </div>
+        <div class="card-footer d-flex justify-content-end">
+           
+        </div>
+    </div>
+
+    <!-- Display Products for the Category -->
+    <div class="mt-4">
+        <h4 class="text-center">Products in this Category</h4>
+        <div class="row justify-content-center">
+            @foreach (var product in Model.Products)
+            {
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <a href="@Url.Action("Details", "Product", new { id = product.ProductId })" class="card text-decoration-none" style="width: 18rem; height: 250px;">
+                        <!-- Link to product details -->
+                        <img src="@Url.Content(product.PicturePath)" class="card-img-top" alt="@product.Name" style="width: 100%; height: 120px; object-fit: cover;" />
+                        <div class="card-body p-2" style="height: 100px;">
+                            <!-- Fixed height -->
+                            <h6 class="card-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">@Html.DisplayFor(modelItem => product.Name)</h6>
+                            <p class="card-text text-muted" style="font-size: 0.85rem; height: 50px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">@Html.DisplayFor(modelItem => product.Description)</p>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</div>

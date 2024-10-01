@@ -1,0 +1,262 @@
+﻿@model NextGenRobotics.ViewModels.OrderSummaryViewModel
+@{
+    ViewBag.Title = "Orders";
+
+}
+
+
+
+
+<!-- Include Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+<!-- Display total sales, total orders, and total products with icons -->
+<div class="alert alert-info d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center">
+        <i class="bi bi-cash-stack" style="font-size: 2rem; margin-right: 10px;"></i>
+        <h5 class="mb-0">Total Sales: @Model.TotalSales.ToString("C")</h5>
+    </div>
+    <div class="d-flex align-items-center">
+        <i class="bi bi-file-earmark-text" style="font-size: 2rem; margin-right: 10px;"></i>
+        <h5 class="mb-0">Total Orders: @Model.TotalOrders</h5>
+    </div>
+
+    <div class="d-flex align-items-center">
+        <i class="bi bi-tags-fill fs-2 me-2"></i>
+        <h5>Total Categories: @Model.TotalCategories</h5>
+    </div>
+
+    <div class="d-flex align-items-center">
+        <i class="bi bi-box" style="font-size: 2rem; margin-right: 10px;"></i>
+        <h5 class="mb-0">Total Products: @Model.TotalProducts</h5>
+    </div>
+</div>
+@*@Model.TotalProducts*@
+
+
+
+<!-- Display total sales and total orders -->
+<!--<div class="alert alert-info">
+    <h5>Total Sales: @Model.TotalSales.ToString("C")</h5>
+    <h5>Total Orders: @Model.TotalOrders</h5>
+</div>-->
+<!-- Chart for last 7 days sales -->
+<div class="row">
+    <div class="col-md-12">
+        <h5>Sales in the Last 7 Days</h5>
+        <canvas id="salesChart" width="400" height="100"></canvas>
+    </div>
+</div>
+<br />
+
+
+<h2>Orders</h2>
+
+
+<!-- Tabs for different order statuses -->
+<ul class="nav nav-tabs" id="orderTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="all-orders-tab" data-bs-toggle="tab" href="#all-orders" role="tab" aria-controls="all-orders" aria-selected="true">All Orders</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pending-orders-tab" data-bs-toggle="tab" href="#pending-orders" role="tab" aria-controls="pending-orders" aria-selected="false">Pending Orders</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="shipped-orders-tab" data-bs-toggle="tab" href="#shipped-orders" role="tab" aria-controls="shipped-orders" aria-selected="false">Shipped Orders</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="confirmed-orders-tab" data-bs-toggle="tab" href="#confirmed-orders" role="tab" aria-controls="confirmed-orders" aria-selected="false">Confirmed Orders</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="canceled-orders-tab" data-bs-toggle="tab" href="#canceled-orders" role="tab" aria-controls="canceled-orders" aria-selected="false">Canceled Orders</a>
+    </li>
+</ul>
+
+<!-- Tabs content for each status -->
+<div class="tab-content" id="orderTabsContent">
+    <!-- All Orders -->
+    <div class="tab-pane fade show active" id="all-orders" role="tabpanel" aria-labelledby="all-orders-tab">
+        <div class="table-container">
+            @Html.Partial("_OrderTable", Model.Orders)
+        </div>
+    </div>
+
+    <!-- Pending Orders -->
+    <div class="tab-pane fade" id="pending-orders" role="tabpanel" aria-labelledby="pending-orders-tab">
+        <div class="table-container">
+            @Html.Partial("_OrderTable", Model.Orders.Where(o => o.Status == "Pending"))
+        </div>
+    </div>
+
+    <!-- Shipped Orders -->
+    <div class="tab-pane fade" id="shipped-orders" role="tabpanel" aria-labelledby="shipped-orders-tab">
+        <div class="table-container">
+            @Html.Partial("_OrderTable", Model.Orders.Where(o => o.Status == "Shipped"))
+        </div>
+    </div>
+
+    <!-- Confirmed Orders -->
+    <div class="tab-pane fade" id="confirmed-orders" role="tabpanel" aria-labelledby="confirmed-orders-tab">
+        <div class="table-container">
+            @Html.Partial("_OrderTable", Model.Orders.Where(o => o.Status == "Confirmed"))
+        </div>
+    </div>
+
+    <!-- Canceled Orders -->
+    <div class="tab-pane fade" id="canceled-orders" role="tabpanel" aria-labelledby="canceled-orders-tab">
+        <div class="table-container">
+            @Html.Partial("_OrderTable", Model.Orders.Where(o => o.Status == "Canceled"))
+        </div>
+    </div>
+</div>
+
+<!-- Script for initializing Bootstrap's dropdown and tabs -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'));
+        dropdownElementList.map(function (dropdownToggleEl) {
+            return new bootstrap.Dropdown(dropdownToggleEl);
+        });
+
+        var tabElementList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tab"]'));
+        tabElementList.map(function (tabToggleEl) {
+            tabToggleEl.addEventListener('shown.bs.tab', function (event) {
+                // Logic to handle tab change if necessary
+            });
+        });
+
+        // Prepare data for the last 7 days
+        var orderDates = [];
+        var salesData = [];
+
+        // Get today's date
+        var today = new Date();
+
+        // Initialize an array for sales data for the last 7 days
+        for (let i = 6; i >= 0; i--) {
+            let date = new Date(today);
+            date.setDate(today.getDate() - i);
+            let formattedDate = date.toISOString().split('T')[0]; // Get YYYY-MM-DD format
+            orderDates.push(formattedDate);
+
+            // Initialize sales to zero
+            salesData.push(0);
+        }
+
+        // Populate sales data based on model orders
+        @foreach (var order in Model.Orders)
+        {
+            // Output the order date and total amount as JavaScript
+            var orderDate = order.OrderDate.ToString("yyyy-MM-dd");
+            var totalAmount = order.Status == "Confirmed" ? order.TotalAmount : 0; // Add to total if confirmed
+            @:
+            // JavaScript that needs to run for each order
+            <text>
+                (function() {
+                    var index = orderDates.indexOf('@orderDate');
+                    if (index !== -1) {
+                        salesData[index] += @totalAmount; // Add to the corresponding day
+                    }
+                })();
+            </text>
+        }
+
+        // Create the chart
+        var ctx = document.getElementById('salesChart').getContext('2d');
+        var salesChart = new Chart(ctx, {
+            type: 'line', // Choose the chart type
+            data: {
+                labels: orderDates.reverse(), // Reverse the order of dates for the chart
+                datasets: [{
+                    label: 'Sales in Last 7 Days',
+                    data: salesData.reverse(), // Reverse the sales data for the chart
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    });
+</script>
+
+<!-- Optional additional CSS for styling the tabs or tables -->
+<!--<style>
+    .table-container {
+        margin-top: 20px; /* Adds spacing between tabs and table */
+    }
+
+    .nav-tabs .nav-link {
+        font-size: 1rem; /* Custom font size for tab navigation */
+        padding: 10px 20px; /* Adjust padding for better appearance */
+    }
+</style>-->
+
+<style>
+    /* Adjust the size of the tabs */
+    .nav-tabs .nav-link {
+        font-size: 0.85rem; /* Smaller font size for tab text */
+        padding: 8px 15px; /* Smaller padding for tabs */
+    }
+
+    /* Adjust table font size and spacing */
+    .table-container table {
+        font-size: 0.85rem; /* Smaller font size for table content */
+    }
+
+    .table-container th,
+    .table-container td {
+        padding: 6px 10px; /* Smaller padding for table cells */
+    }
+
+    /* Ensure dropdown text remains black on hover */
+    .dropdown-menu .dropdown-item:hover {
+        color: black; /* Set the text color to black */
+    }
+
+
+    /* Adjust the font size of the total sales, total orders, and total products section */
+    .alert h5 {
+        font-size: 1rem; /* Reduce font size for headings */
+    }
+
+    .alert i {
+        font-size: 1.5rem; /* Reduce icon size */
+        margin-right: 5px; /* Adjust margin for better spacing */
+    }
+
+    /* Adjust padding and margins for better spacing */
+    .table-container {
+        margin-top: 15px; /* Smaller margin between tabs and table */
+    }
+
+    /* Adjust chart font and size */
+    canvas {
+        max-height: 180px; /* Limit chart height */
+    }
+
+    @@media (max-width: 768px) {
+        /* Adjustments for smaller screens */
+        .alert h5 {
+            font-size: 0.85rem; /* Smaller text for smaller screens */
+        }
+
+        .nav-tabs .nav-link {
+            font-size: 0.75rem; /* Smaller tabs on smaller screens */
+            padding: 6px 10px; /* Reduce padding */
+        }
+
+        .table-container table {
+            font-size: 0.75rem; /* Smaller table font size for mobile */
+        }
+    }
+</style>
+

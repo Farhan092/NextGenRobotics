@@ -1,0 +1,72 @@
+﻿@model NextGenRobotics.Models.User
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="text-center mt-4">Login</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div id="successMessage" class="alert alert-success text-center">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+@if (ViewBag.Invalid != null)
+{
+    <div class="alert alert-danger text-center">
+        @ViewBag.Invalid
+    </div>
+}
+
+@using (Html.BeginForm("Login", "Users", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="row justify-content-center mt-4">
+        <!-- Form Column -->
+        <div class="col-md-6 shadow p-4 rounded bg-light">
+            <h4 class="mb-3 text-center">Login to Your Account</h4>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "alert alert-danger" })
+
+            <!-- Username -->
+            <div class="mb-3 row">
+                @Html.LabelFor(x => x.UserName, htmlAttributes: new { @class = "col-md-3 col-form-label fw-bold" })
+                <div class="col-md-9">
+                    @Html.TextBoxFor(x => x.UserName, new { @class = "form-control", Value = ViewBag.NewUserName })
+                    @Html.ValidationMessageFor(x => x.UserName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <!-- Password -->
+            <div class="mb-3 row">
+                @Html.LabelFor(x => x.Password, htmlAttributes: new { @class = "col-md-3 col-form-label fw-bold" })
+                <div class="col-md-9">
+                    @Html.PasswordFor(x => x.Password, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.Password, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <!-- Login Button -->
+            <div class="mb-3 row">
+                <div class="col-md-9 offset-md-3">
+                    <input id="saveBtn" type="submit" value="Login" class="btn btn-primary px-4" />
+                    <a href="@Url.Action("ClearLogin", "Users")" class="btn btn-danger px-4 ms-2">Clear</a>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        $(document).ready(function () {
+            setTimeout(function () {
+                $('#successMessage').fadeOut('slow');
+            }, 5000); // 5000 milliseconds = 5 seconds
+        });
+    </script>
+}
